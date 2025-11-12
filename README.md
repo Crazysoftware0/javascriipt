@@ -1,0 +1,2 @@
+# javascriipt
+projelerim buradaa
