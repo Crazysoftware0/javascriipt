@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile App Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2cc0d", // This is the gold color from the component examples
+                        "background-light": "#fcfbf8", // Off-white from component examples
+                        "background-dark": "#221f10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display group/design-root overflow-x-hidden">
+<!-- Main content container -->
+<div class="flex flex-col flex-grow">
+<!-- HeaderImage -->
+<div class="@container">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden" data-alt="A stylish, abstract arrangement of geometric shapes in muted earth tones, suggesting sophistication and design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbkmp5QQqKhrQr6P0tQNak4B8CXe6nhxUkKRYdwYSs9H29k6A_IDsmLNl5FePZSz8Uc_y-juXjt6yiz3tgUB4KsbnCucgQusvdL47nlawXottCB8-hxwmWRofQNn-UwKWRI9ezEgpnFRU-Y0BK8rfdxLmaXsgxCvz6lFXVN9HE-mESLNwzN3WvpyHDB419ZGo95CuMvgyt8Vn1KR3_gSTB4UoYmBdWHQOt6FV7MMBjgteUCU-Py4_SNe_VBsSFzxijsHRJ8qJ1rxs"); min-height: 33vh;'></div>
+</div>
+<div class="px-4 py-6 flex flex-col items-center">
+<!-- HeadlineText -->
+<h1 class="text-[#1c190d] dark:text-gray-200 tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">
+                    Welcome to Aura
+                </h1>
+<!-- Primary (Gold) Button -->
+<div class="flex py-3 justify-center w-full max-w-md">
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-[#1c190d] text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<!-- BodyText -->
+<p class="text-[#1c190d] dark:text-gray-400 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-md">
+                    Discover a new way to organize your life. Aura helps you stay focused and achieve your goals with intuitive tools and beautiful design.
+                </p>
+</div>
+</div>
+<!-- Sticky Footer Button -->
+<div class="sticky bottom-0 w-full bg-background-light dark:bg-background-dark p-4 border-t border-gray-200 dark:border-gray-800">
+<!-- Secondary (Black) Button -->
+<div class="flex justify-center">
+<button class="flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#1c190d] dark:bg-gray-200 text-background-light dark:text-[#1c190d] text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
